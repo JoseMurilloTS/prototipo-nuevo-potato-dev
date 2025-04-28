@@ -9,7 +9,6 @@ public class SimuladorDesbloqueo : MonoBehaviour
         PlayerPrefs.SetInt("nivel_3_desbloqueado", 1);
         PlayerPrefs.Save();
 
-        // Ir al mapa de niveles después de desbloquear
-        SceneManager.LoadScene("Mapa");
+        Debug.Log("Todos los niveles han sido desbloqueados.");
     }
 }
