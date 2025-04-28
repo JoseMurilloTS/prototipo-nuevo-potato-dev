@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      test logro2_0: 465935535935411092
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
