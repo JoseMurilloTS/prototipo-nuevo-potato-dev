@@ -43,6 +43,9 @@ public class ScoreManager : MonoBehaviour
             //Desbloquear nivel 2
             DesbloqueoNiveles.DesbloquearNivel("nivel_2_desbloqueado");
 
+            //Mostrar el logro de nivel completado
+            AchievementManager.instance.LogroCompletado("nivel1");
+
             StartCoroutine(LoadVictorySceneWithDelay(0.5f));
         }
     }

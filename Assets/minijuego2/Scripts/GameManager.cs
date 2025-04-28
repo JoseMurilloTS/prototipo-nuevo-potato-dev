@@ -34,6 +34,9 @@ public class GameManager : MonoBehaviour
             //Desbloquear el nivel 3
             DesbloqueoNiveles.DesbloquearNivel("nivel_3_desbloqueado");
 
+            //Mostrar el logro de nivel completado
+            AchievementManager.instance.LogroCompletado("nivel2");
+
             StartCoroutine(CargarEscenaConDelay("Victoria", 0.5f));
         }
 
