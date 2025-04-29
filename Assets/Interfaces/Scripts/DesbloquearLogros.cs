@@ -6,8 +6,10 @@ public class DesbloqueoLogros : MonoBehaviour
     [System.Serializable]
     public class Logro
     {
-        public GameObject filtroOscuro;        // El filtro/capa negra sobre la imagen
-        public string nombreClavePlayerPrefs;  // Ej: "logro_nivel_1"
+        public GameObject filtroOscuro;
+        public Image casillaVacia;
+        public Image casillaMarcada;
+        public string nombreClavePlayerPrefs;
     }
 
     public Logro[] logros;
@@ -23,8 +25,29 @@ public class DesbloqueoLogros : MonoBehaviour
         {
             bool desbloqueado = PlayerPrefs.GetInt(logro.nombreClavePlayerPrefs, 0) == 1;
 
-            if (logro.filtroOscuro != null)
-                logro.filtroOscuro.SetActive(!desbloqueado); // Apagamos filtro si está desbloqueado
+            // Si el logro está desbloqueado
+            if (desbloqueado)
+            {
+                if (logro.filtroOscuro != null)
+                    logro.filtroOscuro.SetActive(false);
+
+                if (logro.casillaVacia != null)
+                    logro.casillaVacia.gameObject.SetActive(false);
+
+                if (logro.casillaMarcada != null)
+                    logro.casillaMarcada.gameObject.SetActive(true);
+            }
+            else
+            {
+                if (logro.filtroOscuro != null)
+                    logro.filtroOscuro.SetActive(true);
+
+                if (logro.casillaVacia != null)
+                    logro.casillaVacia.gameObject.SetActive(true);
+
+                if (logro.casillaMarcada != null)
+                    logro.casillaMarcada.gameObject.SetActive(false);
+            }
         }
     }
 

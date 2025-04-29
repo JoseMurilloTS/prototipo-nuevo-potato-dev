@@ -175,8 +175,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSource: {fileID: 1444012847}
   sonidoClick: {fileID: 8300000, guid: 05361dca373e5624c93e6aa5da1bf7b1, type: 3}
-  delay: 0.3
-  menuPausaUI: {fileID: 548269368}
+  menuPausa: {fileID: 1105735299}
 --- !u!114 &30747563
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3282,7 +3281,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSource: {fileID: 1496603829}
   sonidoClick: {fileID: 8300000, guid: 05361dca373e5624c93e6aa5da1bf7b1, type: 3}
-  delay: 0.3
 --- !u!114 &421140766
 MonoBehaviour:
   m_ObjectHideFlags: 0

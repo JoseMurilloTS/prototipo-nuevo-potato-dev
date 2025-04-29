@@ -7,8 +7,8 @@ public class DesbloqueoNiveles : MonoBehaviour
     public class Nivel
     {
         public Button botonNivel;
-        public string nombreClavePlayerPrefs; // Ej: "nivel_2_desbloqueado"
-        public GameObject iconoBloqueado;     // Imagen del candado u overlay
+        public string nombreClavePlayerPrefs;
+        public GameObject iconoBloqueado;
     }
 
     public Nivel[] niveles;
@@ -33,7 +33,6 @@ public class DesbloqueoNiveles : MonoBehaviour
         }
     }
 
-    // Esto lo usarás más adelante desde otras escenas
     public static void DesbloquearNivel(string nombreClave)
     {
         PlayerPrefs.SetInt(nombreClave, 1);

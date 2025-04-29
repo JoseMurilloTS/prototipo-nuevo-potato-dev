@@ -1,29 +1,26 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class BotonReanudar : MonoBehaviour
 {
     public AudioSource audioSource;
     public AudioClip sonidoClick;
-    public float delay = 0.3f;
 
-    public GameObject menuPausaUI;
+    public MenuPausa menuPausa;
 
     public void Reanudar()
+    {
+        StartCoroutine(ReanudarJuego());
+    }
+
+    IEnumerator ReanudarJuego()
     {
         if (audioSource && sonidoClick)
         {
             audioSource.PlayOneShot(sonidoClick);
-            Invoke(nameof(ActivarJuego), delay);
+            yield return new WaitForSecondsRealtime(0.4f);
         }
-        else
-        {
-            ActivarJuego();
-        }
-    }
 
-    void ActivarJuego()
-    {
-        menuPausaUI.SetActive(false);
+        menuPausa.Reanudar();
     }
 }

@@ -16,7 +16,6 @@ public class AccionBotonJugar : MonoBehaviour
         }
         else
         {
-            // Si no hay sonido, carga de inmediato
             CargarEscena();
         }
     }

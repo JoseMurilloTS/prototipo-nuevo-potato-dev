@@ -22,6 +22,6 @@ public class AccionBotonSalir : MonoBehaviour
     void CerrarApp()
     {
         Application.Quit();
-        Debug.Log("Saliendo del juego..."); // Solo se ve en el editor
+        Debug.Log("Saliendo del juego...");
     }
 }
