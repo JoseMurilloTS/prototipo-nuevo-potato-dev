@@ -20,11 +20,13 @@ public class MenuPausa : MonoBehaviour
     {
         menuPausaUI.SetActive(false);
         juegoPausado = false;
+        Time.timeScale = 1f;
     }
 
     void Pausar()
     {
         menuPausaUI.SetActive(true);
         juegoPausado = true;
+        Time.timeScale = 0f;
     }
 }

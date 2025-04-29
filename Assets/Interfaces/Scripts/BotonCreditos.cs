@@ -5,7 +5,7 @@ public class AccionBotonCreditos : MonoBehaviour
     public GameObject imagenCreditos;
     public AudioSource audioSource;
     public AudioClip sonidoClick;
-    public float delay = 0.3f; // Puedes ajustarlo si el sonido dura más o menos
+    public float delay = 0.3f;
 
     public void MostrarCreditos()
     {

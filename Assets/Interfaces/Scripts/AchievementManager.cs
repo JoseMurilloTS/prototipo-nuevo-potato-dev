@@ -49,7 +49,6 @@ public class AchievementManager : MonoBehaviour
         {
             logro.Desbloquear();
 
-            //Agregamos esto para marcar que hay un nuevo logro
             PlayerPrefs.SetInt("nuevo_logro", 1);
             PlayerPrefs.Save();
         }

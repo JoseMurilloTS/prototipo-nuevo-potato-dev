@@ -1,27 +1,26 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class BotonVolverAlMenu : MonoBehaviour
 {
     public AudioSource audioSource;
     public AudioClip sonidoClick;
-    public float delay = 0.3f;
 
     public void VolverAlMenu()
+    {
+        StartCoroutine(EsperarYCargarMenu());
+    }
+
+    IEnumerator EsperarYCargarMenu()
     {
         if (audioSource && sonidoClick)
         {
             audioSource.PlayOneShot(sonidoClick);
-            Invoke(nameof(CargarMenu), delay);
+            yield return new WaitForSecondsRealtime(0.4f);
         }
-        else
-        {
-            CargarMenu();
-        }
-    }
 
-    void CargarMenu()
-    {
+        Time.timeScale = 1f;
         SceneManager.LoadScene("Menu");
     }
 }

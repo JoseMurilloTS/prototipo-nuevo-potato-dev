@@ -1097,8 +1097,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSource: {fileID: 1121945491}
   sonidoClick: {fileID: 8300000, guid: 05361dca373e5624c93e6aa5da1bf7b1, type: 3}
-  delay: 0.3
-  menuPausaUI: {fileID: 1885710144}
+  menuPausa: {fileID: 1682584564}
 --- !u!1 &701329172
 GameObject:
   m_ObjectHideFlags: 0
@@ -5473,7 +5472,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSource: {fileID: 1540559796}
   sonidoClick: {fileID: 8300000, guid: 05361dca373e5624c93e6aa5da1bf7b1, type: 3}
-  delay: 0.3
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
