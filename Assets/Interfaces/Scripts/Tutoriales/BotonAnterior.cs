@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class ScriptAnterior : MonoBehaviour
 {
@@ -6,20 +7,21 @@ public class ScriptAnterior : MonoBehaviour
     public GameObject panelAnterior;
     public AudioSource audioSource;
     public AudioClip sonidoClick;
-    public float delay = 0.3f;
+    public float delay = 0.4f;
 
     public void Retroceder()
     {
-        if (audioSource != null && sonidoClick != null)
-        {
-            audioSource.PlayOneShot(sonidoClick);
-        }
-
-        Invoke(nameof(CambiarPanel), delay);
+        StartCoroutine(RetrocederConSonido());
     }
 
-    private void CambiarPanel()
+    IEnumerator RetrocederConSonido()
     {
+        if (audioSource && sonidoClick)
+        {
+            audioSource.PlayOneShot(sonidoClick);
+            yield return new WaitForSecondsRealtime(delay);
+        }
+
         if (panelActual != null)
             panelActual.SetActive(false);
 

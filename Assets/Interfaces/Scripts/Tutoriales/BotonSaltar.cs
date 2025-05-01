@@ -1,24 +1,26 @@
 using UnityEngine;
+using System.Collections;
 
 public class ScriptSaltar : MonoBehaviour
 {
     public GameObject panelTutorial;
     public AudioSource audioSource;
     public AudioClip sonidoClick;
-    public float delay = 0.3f;
+    public float delay = 0.4f;
 
     public void SaltarTutorial()
     {
-        if (audioSource != null && sonidoClick != null)
-        {
-            audioSource.PlayOneShot(sonidoClick);
-        }
-
-        Invoke(nameof(CerrarTutorial), delay);
+        StartCoroutine(SaltarConSonido());
     }
 
-    private void CerrarTutorial()
+    IEnumerator SaltarConSonido()
     {
+        if (audioSource && sonidoClick)
+        {
+            audioSource.PlayOneShot(sonidoClick);
+            yield return new WaitForSecondsRealtime(delay);
+        }
+
         if (panelTutorial != null)
             panelTutorial.SetActive(false);
     }
