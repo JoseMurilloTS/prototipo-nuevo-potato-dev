@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      fondo-game-over_0: 5983545987906338686
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
