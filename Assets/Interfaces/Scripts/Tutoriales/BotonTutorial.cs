@@ -1,43 +1,44 @@
 using UnityEngine;
+using System.Collections;
 
 public class AccionBotonTutorial : MonoBehaviour
 {
     public GameObject panelTutorial;
     public AudioSource audioSource;
     public AudioClip sonidoClick;
-    public float delay = 0.3f;
+    public float delay = 0.4f;
 
     public void MostrarTutorial()
     {
-        if (audioSource != null && sonidoClick != null)
-        {
-            audioSource.PlayOneShot(sonidoClick);
-        }
-
-        if (panelTutorial != null)
-        {
-            panelTutorial.SetActive(true);
-        }
+        StartCoroutine(MostrarConSonido());
     }
 
     public void OcultarTutorial()
     {
-        if (audioSource != null && sonidoClick != null)
-        {
-            audioSource.PlayOneShot(sonidoClick);
-            Invoke(nameof(DesactivarPanel), delay);
-        }
-        else
-        {
-            DesactivarPanel();
-        }
+        StartCoroutine(OcultarConSonido());
     }
 
-    private void DesactivarPanel()
+    IEnumerator MostrarConSonido()
     {
-        if (panelTutorial != null)
+        if (audioSource && sonidoClick)
         {
-            panelTutorial.SetActive(false);
+            audioSource.PlayOneShot(sonidoClick);
+            yield return new WaitForSecondsRealtime(delay);
         }
+
+        if (panelTutorial != null)
+            panelTutorial.SetActive(true);
+    }
+
+    IEnumerator OcultarConSonido()
+    {
+        if (audioSource && sonidoClick)
+        {
+            audioSource.PlayOneShot(sonidoClick);
+            yield return new WaitForSecondsRealtime(delay);
+        }
+
+        if (panelTutorial != null)
+            panelTutorial.SetActive(false);
     }
 }
