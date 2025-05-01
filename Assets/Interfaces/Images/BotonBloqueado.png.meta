@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      BotonBloqueado_0: 459560605256381896
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
