@@ -1,7 +1,8 @@
 using UnityEngine;
 
-public class ButtonBehaviourScript : MonoBehaviour
+public class CartelBehaviour : MonoBehaviour
 {
+    [SerializeField] private string[] textoCartel;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

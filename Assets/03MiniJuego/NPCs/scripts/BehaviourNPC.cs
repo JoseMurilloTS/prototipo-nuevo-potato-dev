@@ -18,6 +18,7 @@ public class BehaviourNPC : MonoBehaviour
     [SerializeField] private Button[] botonesRespuestas; // Asigna 2 botones en el Inspector
     [SerializeField] private TMP_Text textoPregunta;
     private int preguntaActual = 0;
+    private bool yaPregunto=false;  //sirve para que cuando el jugador ya termino la cinematica ya no entre a las preguntas 
 
     // Preguntas y respuestas
     [System.Serializable]
@@ -52,6 +53,7 @@ public class BehaviourNPC : MonoBehaviour
             if (!didDialogueStart)
             {
                 EmpezarDialogo();
+                preguntaActual = 0;
             }
             else if (textoDialogo.text == lineaTexto[indexLine])
             {
@@ -78,7 +80,9 @@ public class BehaviourNPC : MonoBehaviour
         didDialogueStart = true;
         panelDialogo.SetActive(true);
         aviso.SetActive(false);
-        indexLine = 0;
+        // Si ya preguntó, empezar directamente en la última línea
+        indexLine = yaPregunto ? lineaTexto.Length - 1 : 0; //estoy usando el operador ternario para hacerlo de forma mas compacta a los condicionales
+                                                            // son similares equivalentes al iff y al else;
         StartCoroutine(MostrarLineas());
     }
     private IEnumerator MostrarLineas()
@@ -93,16 +97,31 @@ public class BehaviourNPC : MonoBehaviour
 
     private void SiguienteLinea()
     {
-        indexLine++;
-        if(indexLine< lineaTexto.Length)
+        if (yaPregunto && didDialogueStart)
         {
-            StartCoroutine(MostrarLineas());
+            // Mostrar directamente la última línea
+            indexLine = lineaTexto.Length - 1; // indice del último elemento del aaray
+            textoDialogo.text = lineaTexto[indexLine];
+
+            didDialogueStart = false;
+            panelDialogo.SetActive(false);
+            aviso.SetActive(true);
+            return;
         }
         else
         {
-            didDialogueStart=false;
-            panelDialogo.SetActive(false);
-            aviso.SetActive(true);
+            indexLine++;
+            if (indexLine < lineaTexto.Length-1)
+            {
+                StartCoroutine(MostrarLineas());
+            }
+            else
+            {
+                didDialogueStart = false;
+                panelDialogo.SetActive(false);
+                aviso.SetActive(true);
+                yaPregunto = true;
+            }
         }
     }
 

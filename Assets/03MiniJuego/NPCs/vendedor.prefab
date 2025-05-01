@@ -198,13 +198,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aviso: {fileID: 1688694050624696494}
   lineaTexto:
-  - 'Vendedor: Hola, mucho gusto, me dijeron queras muy bueno con las Sumas, necesito
-    de tu ayuda, podrias ayudarme?'
-  - 'Heroe: claro que lo soy, dejame ayudarte.'
-  - 'Vendedor: Veamos si eres tan bueno como dices.'
-  - 'Vendedor: Veamos si eres tan bueno como dices.'
-  - 'Vendedor: Veamos si eres tan bueno como dices.'
-  - 'Vendedor: Veamos si eres tan bueno como dicesss.'
+  - "Lionel: Hola, mucho gusto... Cuentan por ah\xED que sos bueno con las matem\xE1ticas.
+    \xBFTe importa resolver unos desaf\xEDos?"
+  - "Tom\xE1s: Claro que lo soy... Veamos qu\xE9 tenes para mi."
+  - 'Lionel: Veamos si sos tan bueno como decis.'
+  - "Lionel: Esto todav\xEDa no termin\xF3, Tom\xE1s."
+  - "Lionel: Todav\xEDa tengo desaf\xEDos para vos."
+  - "Lionel: \xA1En algo ten\xE9s que errarle!"
   panelDialogo: {fileID: 6324976912783438936}
   textoDialogo: {fileID: 4121131618413828838}
   panelPreguntas: {fileID: 5450967701170648488}
@@ -213,12 +213,13 @@ MonoBehaviour:
   - {fileID: 1663424156057181559}
   textoPregunta: {fileID: 3524594000040868602}
   preguntas:
-  - pregunta: "mi puerco acaba de tener 4 crias\xBFcuantos puercos tengo ahora?"
+  - pregunta: "Mi chanchito acaba de tener 4 crias... \xBFMe decis cu\xE1ntos chanchos
+      tengo en total?"
     respuestas:
     - 4
     - 5
     respuestaCorrecta: 1
-  - pregunta: "tengo 5 manzanas y me regalaron 6\xBFcuantas tengo ahora?"
+  - pregunta: "Aqu\xED tengo 5 manzanas y me acaban de regalar 6. \xBFEl total es...?"
     respuestas:
     - 11
     - 15
@@ -610,7 +611,7 @@ RectTransform:
   m_GameObject: {fileID: 2291797488055284145}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.4999999, y: 1.2, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5766833555194489794}
@@ -959,7 +960,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6267913301656994083
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1003,7 +1004,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.78039217}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1079,7 +1080,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.90588236}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1260,7 +1261,7 @@ RectTransform:
   m_GameObject: {fileID: 8844427289873166395}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.4999999, y: 1.2, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8097429148013583122}
