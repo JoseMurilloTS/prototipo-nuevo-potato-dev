@@ -20,4 +20,6 @@ public class behaviourPlayer : MonoBehaviour
     {
         Rigidbody2D.MovePosition(Rigidbody2D.position+direccion*velocidad*Time.fixedDeltaTime);
     }
+
+
 }

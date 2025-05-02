@@ -7,7 +7,7 @@ public class BehaviourNPC : MonoBehaviour
     private bool isPlayer;
     private bool didDialogueStart;
     private int indexLine;
-
+    private int puntosRespuestaCorrecta = 100;
     [SerializeField]private GameObject aviso;
     [SerializeField, TextArea(6, 4)] private string[] lineaTexto;
     [SerializeField] private GameObject panelDialogo;
@@ -155,15 +155,15 @@ public class BehaviourNPC : MonoBehaviour
             botonPresionado.image.color = Color.red;
 
             // Desactivar solo este botón
-            // botonPresionado.interactable = false;
-
+            //botonPresionado.interactable = false;
+            PlayerScore.Instance.perderVida();
             // No incrementar preguntaActual, para permitir reintentos
             return; //Salir sin avanzar.
         }
         else
         {
             Debug.Log("Respuesta correcta!");
-
+            PlayerScore.Instance.GanarPuntos(puntosRespuestaCorrecta);
             // Restaurar colores de todos los botonespor si alguno estaba rojo
             foreach (var boton in botonesRespuestas)
             {

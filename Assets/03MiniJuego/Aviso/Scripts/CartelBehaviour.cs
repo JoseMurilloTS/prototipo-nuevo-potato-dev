@@ -1,8 +1,9 @@
 using UnityEngine;
-
+using TMPro;
 public class CartelBehaviour : MonoBehaviour
 {
     [SerializeField] private string[] textoCartel;
+    //[SerializeField] private TMPro cartel;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

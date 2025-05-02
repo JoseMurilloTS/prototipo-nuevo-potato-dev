@@ -205,6 +205,7 @@ MonoBehaviour:
   - "Lionel: Esto todav\xEDa no termin\xF3, Tom\xE1s."
   - "Lionel: Todav\xEDa tengo desaf\xEDos para vos."
   - "Lionel: \xA1En algo ten\xE9s que errarle!"
+  - "Lionel: \xA1Muchas Gracias por ayudarme!"
   panelDialogo: {fileID: 6324976912783438936}
   textoDialogo: {fileID: 4121131618413828838}
   panelPreguntas: {fileID: 5450967701170648488}
