@@ -1,7 +1,7 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 using TMPro;
-using static DesbloqueoNiveles;
-using System;
+using UnityEditor.SearchService;
+using UnityEngine.SceneManagement;
 public class PlayerScore : MonoBehaviour
 {
     [SerializeField] TMP_Text textScore, textLife;
@@ -11,15 +11,16 @@ public class PlayerScore : MonoBehaviour
 
     void Awake()
     {
-        // Patrón Singleton para fácil acceso
-        if (Instance != null && Instance!= this)
+        if (Instance == null)
         {
-            Destroy(this);
-            //DontDestroyOnLoad(gameObject); // Opcional: si quieres persistir entre escenas
+            Instance = this;
+            Debug.Log("Creando nueva instancia");
+            //DontDestroyOnLoad(gameObject); Mantener entre escenas
         }
         else
         {
-            Instance = this;
+            Debug.Log("Destruyendo duplicado: " + gameObject.name);
+            Destroy(gameObject); // Destruir el GameObject completo
         }
     }
     void Start()
@@ -39,15 +40,18 @@ public class PlayerScore : MonoBehaviour
     public void perderVida()
     {
         life -= 1;
+        Debug.Log($"perdiste Una Vida, vida actual:{life}");
         UpdateUI();
         if (life <= 0)
         {
             Debug.Log("perdiste");//cambiar por cambio de escena "perder"
+            SceneManager.LoadScene("GameOver");
         }
     }
     public void GanarPuntos(int puntosGanados)
     {
         score += puntosGanados;
+        Debug.Log($"ganaste puntos, puntos actuales:{score}");
         UpdateUI() ;
     }
 }
