@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class ReproducirSonidoBoton : MonoBehaviour
+public class BotonReproducir : MonoBehaviour
 {
     public AudioSource audioSource;
     public AudioClip sonidoClick;

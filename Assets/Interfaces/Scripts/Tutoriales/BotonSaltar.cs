@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class ScriptSaltar : MonoBehaviour
+public class BotonSaltar : MonoBehaviour
 {
     public GameObject panelTutorial;
     public AudioSource audioSource;

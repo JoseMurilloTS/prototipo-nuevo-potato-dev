@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class AccionBotonLogros : MonoBehaviour
+public class BotonLogros : MonoBehaviour
 {
     public GameObject panelLogros;
     public GameObject iconoNuevoLogro;

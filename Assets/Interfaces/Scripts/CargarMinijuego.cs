@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class BotonCargarNivel : MonoBehaviour
+public class CargarMinijuego : MonoBehaviour
 {
     public string nombreEscena;
     public AudioSource audioSource;

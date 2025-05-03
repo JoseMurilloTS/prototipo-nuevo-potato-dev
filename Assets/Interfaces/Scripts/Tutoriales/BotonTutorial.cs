@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class AccionBotonTutorial : MonoBehaviour
+public class BotonTutorial : MonoBehaviour
 {
     public GameObject panelTutorial;
     public AudioSource audioSource;
