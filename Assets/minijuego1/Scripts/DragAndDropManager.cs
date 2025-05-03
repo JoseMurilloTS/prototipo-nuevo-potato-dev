@@ -408,4 +408,9 @@ public class DragAndDropManager : MonoBehaviour
         Collider2D collider = glassContainer.GetComponent<Collider2D>();
         if (collider != null) collider.enabled = true;
     }
+
+    public bool IsDragging()
+    {
+        return isDragging;
+    }
 }

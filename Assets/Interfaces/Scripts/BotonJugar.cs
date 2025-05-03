@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class AccionBotonJugar : MonoBehaviour
+public class BotonJugar : MonoBehaviour
 {
     public AudioSource audioSource;
     public AudioClip clickSound;

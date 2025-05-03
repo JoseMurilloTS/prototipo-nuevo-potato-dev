@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class AccionBotonSalir : MonoBehaviour
+public class BotonSalir : MonoBehaviour
 {
     public AudioSource audioSource;
     public AudioClip sonidoSalir;

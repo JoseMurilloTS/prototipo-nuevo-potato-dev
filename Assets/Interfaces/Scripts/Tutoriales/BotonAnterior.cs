@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class ScriptAnterior : MonoBehaviour
+public class BotonAnterior : MonoBehaviour
 {
     public GameObject panelActual;
     public GameObject panelAnterior;
