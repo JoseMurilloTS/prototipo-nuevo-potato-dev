@@ -2,12 +2,14 @@ using UnityEngine;
 using System.Collections;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class BehaviourNPC : MonoBehaviour
 {
     private bool isPlayer;
     private bool didDialogueStart;
     private int indexLine;
     private int puntosRespuestaCorrecta = 100;
+    [SerializeField] private GameObject npcSiguiente;
     [SerializeField]private GameObject aviso;
     [SerializeField, TextArea(6, 4)] private string[] lineaTexto;
     [SerializeField] private GameObject panelDialogo;
@@ -121,6 +123,14 @@ public class BehaviourNPC : MonoBehaviour
                 panelDialogo.SetActive(false);
                 aviso.SetActive(true);
                 yaPregunto = true;
+                if (npcSiguiente != null)
+                {
+                    npcSiguiente.SetActive(true);
+                }
+                else
+                {
+                    SceneManager.LoadScene("GameOver");
+                }
             }
         }
     }
@@ -182,14 +192,20 @@ public class BehaviourNPC : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        isPlayer = true;
-        aviso.SetActive(true);
-        Debug.Log("ya estoy");
+        if (collision.CompareTag("Player"))
+        {
+            isPlayer = true;
+            aviso.SetActive(true);
+            Debug.Log("ya estoy");
+        }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
-        isPlayer = false;
-        Debug.Log("me fui");
-        aviso.SetActive(false);
+        if (collision.CompareTag("Player"))
+        {
+            isPlayer = false;
+            Debug.Log("me fui");
+            aviso.SetActive(false);
+        }
     }
 }

@@ -22,6 +22,7 @@ TagManager:
   - item-4
   - item-metal
   - contenedor-metal
+  - Chanchito
   layers:
   - Default
   - TransparentFX
@@ -29,7 +30,7 @@ TagManager:
   - Container
   - Water
   - UI
-  - 
+  - Chanchitos
   - 
   - 
   - 

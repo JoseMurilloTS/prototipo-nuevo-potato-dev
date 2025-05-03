@@ -19,7 +19,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4841976028894696430
 Transform:
   m_ObjectHideFlags: 0
@@ -80,7 +80,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 4723107735738678597, guid: 4486120b07baf5045ae73cf8e2b93e72, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -172,7 +172,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.01845479, y: -0.5290396}
+  m_Offset: {x: 0.07541537, y: -0.5290396}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -182,7 +182,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 2.6355748, y: 1.1269977}
+  m_Size: {x: 1.382442, y: 1.1269977}
   m_EdgeRadius: 0
 --- !u!114 &5127135735150357045
 MonoBehaviour:
@@ -196,6 +196,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0efa444213aca8478c8e7af5e2f1c21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  npcSiguiente: {fileID: 0}
   aviso: {fileID: 1688694050624696494}
   lineaTexto:
   - "Lionel: Hola, mucho gusto... Cuentan por ah\xED que sos bueno con las matem\xE1ticas.
