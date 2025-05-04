@@ -18,6 +18,15 @@ public class behaviourPlayer : MonoBehaviour
     void Update()
     {
         direccion=new Vector2(Input.GetAxisRaw("Horizontal"),Input.GetAxisRaw("Vertical")).normalized;
+        if (direccion.x<0)
+        {
+            transform.localScale = new Vector2(-1, 1);
+        }
+        else if  (direccion.x > 0)
+        {
+            transform.localScale = new Vector2(1, 1);
+        }
+
         if (Input.GetKeyDown(KeyCode.Space))//logica para agarrar al chanchito
         {
             TryCatchChanchito();
