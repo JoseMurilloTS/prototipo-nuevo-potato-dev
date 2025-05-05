@@ -10,16 +10,16 @@ GameObject:
   m_Component:
   - component: {fileID: 301111123862605317}
   - component: {fileID: 3025163409945064263}
-  - component: {fileID: 1087855793978404628}
   - component: {fileID: 4841476167783440646}
   - component: {fileID: 2930077876382230019}
+  - component: {fileID: 2110732276853904773}
   m_Layer: 6
   m_Name: Chanchito
   m_TagString: Chanchito
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &301111123862605317
 Transform:
   m_ObjectHideFlags: 0
@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 1828160815218324476}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.1496668, y: -3.3066127, z: 0}
+  m_LocalPosition: {x: -2.3846097, y: -2.3727102, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -79,7 +79,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 2942697829407079878, guid: f0fed84465695da4a8cb39b8bfdcbd4d, type: 3}
+  m_Sprite: {fileID: 2942697829407079878, guid: 810ee390b7d69e146875f5b3fe53a75f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -90,20 +90,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1087855793978404628
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1828160815218324476}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5dac77e1ed668d54a8b93fb0cac90e0e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 5
-  changeDirectionTime: 1
 --- !u!61 &4841476167783440646
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -138,17 +124,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.051834524, y: -0.051834643}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.12, y: 0.07}
+    oldSize: {x: 1.2, y: 0.7}
     newSize: {x: 0.12, y: 0.07}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.8, y: 0.6}
+  m_Size: {x: 0.8717145, y: 0.59633076}
   m_EdgeRadius: 0
 --- !u!50 &2930077876382230019
 Rigidbody2D:
@@ -177,3 +163,17 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &2110732276853904773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1828160815218324476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6dec54cf8d4cbe4282467a50c98712d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 4
+  changeDirectionTime: 1
