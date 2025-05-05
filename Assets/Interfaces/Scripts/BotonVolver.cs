@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class BotonVolverMenu : MonoBehaviour
+public class VolverMenu : MonoBehaviour
 {
     public AudioSource audioSource;
     public AudioClip sonidoClick;

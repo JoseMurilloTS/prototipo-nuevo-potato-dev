@@ -1,97 +1,97 @@
 fileFormatVersion: 2
-guid: bcc40c1e412592c46b5c31e02c62059b
+guid: c02e16e68a98834479e5291d776cab81
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4592696516646909484
-    second: MenuLogo_0
+      213: 7756713105252864581
+    second: LOGO 2_0
   - first:
-      213: 7238643892930805996
-    second: MenuLogo_1
+      213: -929420903827918108
+    second: LOGO 2_1
   - first:
-      213: -9024673687003917842
-    second: MenuLogo_2
+      213: 3908321584254266090
+    second: LOGO 2_2
   - first:
-      213: 6749589086704308376
-    second: MenuLogo_3
+      213: 5488930243539798040
+    second: LOGO 2_3
   - first:
-      213: 4384571390095228115
-    second: MenuLogo_4
+      213: 1137418501946406720
+    second: LOGO 2_4
   - first:
-      213: -4648825575141179780
-    second: MenuLogo_5
+      213: -1170470991736302474
+    second: LOGO 2_5
   - first:
-      213: 3724074481824935342
-    second: MenuLogo_6
+      213: 5123041085018645618
+    second: LOGO 2_6
   - first:
-      213: 1496529290740475282
-    second: MenuLogo_7
+      213: 6610971432451729313
+    second: LOGO 2_7
   - first:
-      213: -8744433342748451498
-    second: MenuLogo_8
+      213: 850204561376093277
+    second: LOGO 2_8
   - first:
-      213: 3955539821800320179
-    second: MenuLogo_9
+      213: -3136119435925664764
+    second: LOGO 2_9
   - first:
-      213: -2349274360577579883
-    second: MenuLogo_10
+      213: 4278750475266452318
+    second: LOGO 2_10
   - first:
-      213: 896546774181606179
-    second: MenuLogo_11
+      213: 6272245277858518643
+    second: LOGO 2_11
   - first:
-      213: 2747735111464016489
-    second: MenuLogo_12
+      213: -2019806171597049790
+    second: LOGO 2_12
   - first:
-      213: -3357276504401969696
-    second: MenuLogo_13
+      213: 617607896298321862
+    second: LOGO 2_13
   - first:
-      213: 7849714405358487155
-    second: MenuLogo_14
+      213: -5716362247259921445
+    second: LOGO 2_14
   - first:
-      213: 7023580766611002705
-    second: MenuLogo_15
+      213: 6041304795742999949
+    second: LOGO 2_15
   - first:
-      213: 3671805620163952064
-    second: MenuLogo_16
+      213: 1364981051402239411
+    second: LOGO 2_16
   - first:
-      213: -3948719698217764636
-    second: MenuLogo_17
+      213: -2182987827134872866
+    second: LOGO 2_17
   - first:
-      213: 4336886540187882864
-    second: MenuLogo_18
+      213: 2515702073461774525
+    second: LOGO 2_18
   - first:
-      213: 8485136839218126675
-    second: MenuLogo_19
+      213: -5018874400589427390
+    second: LOGO 2_19
   - first:
-      213: -5558166387796650679
-    second: MenuLogo_20
+      213: -3445727063917281126
+    second: LOGO 2_20
   - first:
-      213: 6860053516071696877
-    second: MenuLogo_21
+      213: 2920074040931924348
+    second: LOGO 2_21
   - first:
-      213: 5373149119809166375
-    second: MenuLogo_22
+      213: -7105567472889311413
+    second: LOGO 2_22
   - first:
-      213: 7462867234775192354
-    second: MenuLogo_23
+      213: 7906769097149774210
+    second: LOGO 2_23
   - first:
-      213: 135580007557854498
-    second: MenuLogo_24
+      213: -1223783661517510789
+    second: LOGO 2_24
   - first:
-      213: -7467914893384792518
-    second: MenuLogo_25
+      213: -5907403874265199269
+    second: LOGO 2_25
   - first:
-      213: -1874610112566038280
-    second: MenuLogo_26
+      213: -8143008776388464910
+    second: LOGO 2_26
   - first:
-      213: -7572146558128484755
-    second: MenuLogo_27
+      213: -1247422451390269903
+    second: LOGO 2_27
   - first:
-      213: 901620151135020479
-    second: MenuLogo_28
+      213: -1300473417787574750
+    second: LOGO 2_28
   - first:
-      213: -7894069955994126834
-    second: MenuLogo_29
+      213: 2179141200942708173
+    second: LOGO 2_29
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -187,7 +187,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MenuLogo_0
+      name: LOGO 2_0
       rect:
         serializedVersion: 2
         x: 72
@@ -202,14 +202,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c26b9e316298cbf30800000000000000
-      internalID: 4592696516646909484
+      spriteID: 542d63fe87165ab60800000000000000
+      internalID: 7756713105252864581
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MenuLogo_1
+      name: LOGO 2_1
       rect:
         serializedVersion: 2
         x: 194
@@ -224,14 +224,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ce001b5c444d47460800000000000000
-      internalID: 7238643892930805996
+      spriteID: 4e2b38cbc980a13f0800000000000000
+      internalID: -929420903827918108
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MenuLogo_2
+      name: LOGO 2_2
       rect:
         serializedVersion: 2
         x: 387
@@ -246,14 +246,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ee11150b81be1c280800000000000000
-      internalID: -9024673687003917842
+      spriteID: aeaa77116c52d3630800000000000000
+      internalID: 3908321584254266090
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MenuLogo_3
+      name: LOGO 2_3
       rect:
         serializedVersion: 2
         x: 554
@@ -268,14 +268,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8901dd4738b5bad50800000000000000
-      internalID: 6749589086704308376
+      spriteID: 818861399f89c2c40800000000000000
+      internalID: 5488930243539798040
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MenuLogo_4
+      name: LOGO 2_4
       rect:
         serializedVersion: 2
         x: 755
@@ -290,14 +290,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3dc77f6e27029dc30800000000000000
-      internalID: 4384571390095228115
+      spriteID: 047f879e91ce8cf00800000000000000
+      internalID: 1137418501946406720
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MenuLogo_5
+      name: LOGO 2_5
       rect:
         serializedVersion: 2
         x: 845
@@ -312,14 +312,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c7e75fa15cd0c7fb0800000000000000
-      internalID: -4648825575141179780
+      spriteID: 67498ad95d6a1cfe0800000000000000
+      internalID: -1170470991736302474
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MenuLogo_6
+      name: LOGO 2_6
       rect:
         serializedVersion: 2
         x: 989
@@ -334,14 +334,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: eada54e92029ea330800000000000000
-      internalID: 3724074481824935342
+      spriteID: 274a44a49b2b81740800000000000000
+      internalID: 5123041085018645618
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MenuLogo_7
+      name: LOGO 2_7
       rect:
         serializedVersion: 2
         x: 1141
@@ -356,14 +356,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 295ad82067db4c410800000000000000
-      internalID: 1496529290740475282
+      spriteID: 1a76a8bcd73eebb50800000000000000
+      internalID: 6610971432451729313
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MenuLogo_8
+      name: LOGO 2_8
       rect:
         serializedVersion: 2
         x: 1354
@@ -378,14 +378,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 65d956b643885a680800000000000000
-      internalID: -8744433342748451498
+      spriteID: d542d334b888ccb00800000000000000
+      internalID: 850204561376093277
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MenuLogo_9
+      name: LOGO 2_9
       rect:
         serializedVersion: 2
         x: 1504
@@ -400,14 +400,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3bce155b286e4e630800000000000000
-      internalID: 3955539821800320179
+      spriteID: 40cc3782df34a74d0800000000000000
+      internalID: -3136119435925664764
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MenuLogo_10
+      name: LOGO 2_10
       rect:
         serializedVersion: 2
         x: 517
@@ -422,14 +422,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 59427d18a63b56fd0800000000000000
-      internalID: -2349274360577579883
+      spriteID: e5b6ac033ec216b30800000000000000
+      internalID: 4278750475266452318
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MenuLogo_11
+      name: LOGO 2_11
       rect:
         serializedVersion: 2
         x: 762
@@ -444,14 +444,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 323fd9f7a8c217c00800000000000000
-      internalID: 896546774181606179
+      spriteID: 376d0e239dd7b0750800000000000000
+      internalID: 6272245277858518643
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MenuLogo_12
+      name: LOGO 2_12
       rect:
         serializedVersion: 2
         x: 935
@@ -466,14 +466,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 96a5ea7968ae12620800000000000000
-      internalID: 2747735111464016489
+      spriteID: 240f0d20df438f3e0800000000000000
+      internalID: -2019806171597049790
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MenuLogo_13
+      name: LOGO 2_13
       rect:
         serializedVersion: 2
         x: 1012
@@ -488,14 +488,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0edfa5e8ece8861d0800000000000000
-      internalID: -3357276504401969696
+      spriteID: 6c776550c1f229800800000000000000
+      internalID: 617607896298321862
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MenuLogo_14
+      name: LOGO 2_14
       rect:
         serializedVersion: 2
         x: 1060
@@ -510,14 +510,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 376c8af79a9cfec60800000000000000
-      internalID: 7849714405358487155
+      spriteID: bd36e9c92d66ba0b0800000000000000
+      internalID: -5716362247259921445
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MenuLogo_15
+      name: LOGO 2_15
       rect:
         serializedVersion: 2
         x: 382
@@ -532,14 +532,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1555d15ae75c87160800000000000000
-      internalID: 7023580766611002705
+      spriteID: d85102a14b607d350800000000000000
+      internalID: 6041304795742999949
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MenuLogo_16
+      name: LOGO 2_16
       rect:
         serializedVersion: 2
         x: 1176
@@ -554,14 +554,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0cdb72ae1cfd4f230800000000000000
-      internalID: 3671805620163952064
+      spriteID: 3bd38f5c80361f210800000000000000
+      internalID: 1364981051402239411
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MenuLogo_17
+      name: LOGO 2_17
       rect:
         serializedVersion: 2
         x: 1257
@@ -576,14 +576,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4e8742e0b545339c0800000000000000
-      internalID: -3948719698217764636
+      spriteID: ed2cf9e132874b1e0800000000000000
+      internalID: -2182987827134872866
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MenuLogo_18
+      name: LOGO 2_18
       rect:
         serializedVersion: 2
         x: 239
@@ -598,14 +598,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 075521b9457bf2c30800000000000000
-      internalID: 4336886540187882864
+      spriteID: db8176105b199e220800000000000000
+      internalID: 2515702073461774525
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MenuLogo_19
+      name: LOGO 2_19
       rect:
         serializedVersion: 2
         x: 326
@@ -620,14 +620,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 35f5d24cff241c570800000000000000
-      internalID: 8485136839218126675
+      spriteID: 24dc094e250695ab0800000000000000
+      internalID: -5018874400589427390
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MenuLogo_20
+      name: LOGO 2_20
       rect:
         serializedVersion: 2
         x: 452
@@ -642,14 +642,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9455dd46e1d6dd2b0800000000000000
-      internalID: -5558166387796650679
+      spriteID: a90c24add715e20d0800000000000000
+      internalID: -3445727063917281126
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MenuLogo_21
+      name: LOGO 2_21
       rect:
         serializedVersion: 2
         x: 589
@@ -664,14 +664,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: de97f95a35ec33f50800000000000000
-      internalID: 6860053516071696877
+      spriteID: c7936977edf268820800000000000000
+      internalID: 2920074040931924348
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MenuLogo_22
+      name: LOGO 2_22
       rect:
         serializedVersion: 2
         x: 697
@@ -686,14 +686,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 72c9d6308a2419a40800000000000000
-      internalID: 5373149119809166375
+      spriteID: b4fccd2c704f36d90800000000000000
+      internalID: -7105567472889311413
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MenuLogo_23
+      name: LOGO 2_23
       rect:
         serializedVersion: 2
         x: 799
@@ -708,14 +708,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2235da6c53e619760800000000000000
-      internalID: 7462867234775192354
+      spriteID: 289f5ac1a9c7abd60800000000000000
+      internalID: 7906769097149774210
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MenuLogo_24
+      name: LOGO 2_24
       rect:
         serializedVersion: 2
         x: 907
@@ -730,14 +730,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 225712d6c4da1e100800000000000000
-      internalID: 135580007557854498
+      spriteID: b7762556e3f340fe0800000000000000
+      internalID: -1223783661517510789
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MenuLogo_25
+      name: LOGO 2_25
       rect:
         serializedVersion: 2
         x: 1027
@@ -752,14 +752,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a3643fe98f2ac5890800000000000000
-      internalID: -7467914893384792518
+      spriteID: b5d08a1a97fa40ea0800000000000000
+      internalID: -5907403874265199269
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MenuLogo_26
+      name: LOGO 2_26
       rect:
         serializedVersion: 2
         x: 1165
@@ -774,14 +774,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8f07524e80c0cf5e0800000000000000
-      internalID: -1874610112566038280
+      spriteID: 2fe2a7059a83efe80800000000000000
+      internalID: -8143008776388464910
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MenuLogo_27
+      name: LOGO 2_27
       rect:
         serializedVersion: 2
         x: 38
@@ -796,14 +796,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d6e0e8703d45ae690800000000000000
-      internalID: -7572146558128484755
+      spriteID: 136390cb3e340bee0800000000000000
+      internalID: -1247422451390269903
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MenuLogo_28
+      name: LOGO 2_28
       rect:
         serializedVersion: 2
         x: 126
@@ -818,14 +818,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fb5acbe10c2338c00800000000000000
-      internalID: 901620151135020479
+      spriteID: 226fee4115ac3fde0800000000000000
+      internalID: -1300473417787574750
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MenuLogo_29
+      name: LOGO 2_29
       rect:
         serializedVersion: 2
         x: 1558
@@ -840,8 +840,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e06f2e81331a27290800000000000000
-      internalID: -7894069955994126834
+      spriteID: dc5bb9d606ddd3e10800000000000000
+      internalID: 2179141200942708173
       vertices: []
       indices: 
       edges: []
@@ -860,36 +860,36 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      MenuLogo_0: 4592696516646909484
-      MenuLogo_1: 7238643892930805996
-      MenuLogo_10: -2349274360577579883
-      MenuLogo_11: 896546774181606179
-      MenuLogo_12: 2747735111464016489
-      MenuLogo_13: -3357276504401969696
-      MenuLogo_14: 7849714405358487155
-      MenuLogo_15: 7023580766611002705
-      MenuLogo_16: 3671805620163952064
-      MenuLogo_17: -3948719698217764636
-      MenuLogo_18: 4336886540187882864
-      MenuLogo_19: 8485136839218126675
-      MenuLogo_2: -9024673687003917842
-      MenuLogo_20: -5558166387796650679
-      MenuLogo_21: 6860053516071696877
-      MenuLogo_22: 5373149119809166375
-      MenuLogo_23: 7462867234775192354
-      MenuLogo_24: 135580007557854498
-      MenuLogo_25: -7467914893384792518
-      MenuLogo_26: -1874610112566038280
-      MenuLogo_27: -7572146558128484755
-      MenuLogo_28: 901620151135020479
-      MenuLogo_29: -7894069955994126834
-      MenuLogo_3: 6749589086704308376
-      MenuLogo_4: 4384571390095228115
-      MenuLogo_5: -4648825575141179780
-      MenuLogo_6: 3724074481824935342
-      MenuLogo_7: 1496529290740475282
-      MenuLogo_8: -8744433342748451498
-      MenuLogo_9: 3955539821800320179
+      LOGO 2_0: 7756713105252864581
+      LOGO 2_1: -929420903827918108
+      LOGO 2_10: 4278750475266452318
+      LOGO 2_11: 6272245277858518643
+      LOGO 2_12: -2019806171597049790
+      LOGO 2_13: 617607896298321862
+      LOGO 2_14: -5716362247259921445
+      LOGO 2_15: 6041304795742999949
+      LOGO 2_16: 1364981051402239411
+      LOGO 2_17: -2182987827134872866
+      LOGO 2_18: 2515702073461774525
+      LOGO 2_19: -5018874400589427390
+      LOGO 2_2: 3908321584254266090
+      LOGO 2_20: -3445727063917281126
+      LOGO 2_21: 2920074040931924348
+      LOGO 2_22: -7105567472889311413
+      LOGO 2_23: 7906769097149774210
+      LOGO 2_24: -1223783661517510789
+      LOGO 2_25: -5907403874265199269
+      LOGO 2_26: -8143008776388464910
+      LOGO 2_27: -1247422451390269903
+      LOGO 2_28: -1300473417787574750
+      LOGO 2_29: 2179141200942708173
+      LOGO 2_3: 5488930243539798040
+      LOGO 2_4: 1137418501946406720
+      LOGO 2_5: -1170470991736302474
+      LOGO 2_6: 5123041085018645618
+      LOGO 2_7: 6610971432451729313
+      LOGO 2_8: 850204561376093277
+      LOGO 2_9: -3136119435925664764
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

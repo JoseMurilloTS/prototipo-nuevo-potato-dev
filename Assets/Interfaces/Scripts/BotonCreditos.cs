@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class AccionBotonCreditos : MonoBehaviour
+public class BotonCreditos : MonoBehaviour
 {
     public GameObject imagenCreditos;
     public AudioSource audioSource;
