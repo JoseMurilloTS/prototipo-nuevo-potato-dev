@@ -80,13 +80,13 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 4723107735738678597, guid: 4486120b07baf5045ae73cf8e2b93e72, type: 3}
+  m_SortingOrder: 2
+  m_Sprite: {fileID: 3903582882758540921, guid: eb47867bdb800fa438afa96b0f5f6791, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.7285714, y: 1.0285715}
+  m_Size: {x: 1, y: 1.1333333}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -130,8 +130,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.7285714, y: 1.0285715}
-    newSize: {x: 0.7285714, y: 1.0285715}
+    oldSize: {x: 1, y: 1.1333333}
+    newSize: {x: 1, y: 1.1333333}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -172,17 +172,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.01845479, y: -0.5290396}
+  m_Offset: {x: 0.03195262, y: -0.5476665}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.7285714, y: 1.0285715}
-    newSize: {x: 0.7285714, y: 1.0285715}
+    oldSize: {x: 1, y: 1.1333333}
+    newSize: {x: 1, y: 1.1333333}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 2.6355748, y: 1.1269977}
+  m_Size: {x: 1.2955165, y: 1.1642514}
   m_EdgeRadius: 0
 --- !u!114 &5127135735150357045
 MonoBehaviour:
@@ -196,15 +196,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0efa444213aca8478c8e7af5e2f1c21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  npcSiguiente: {fileID: 0}
   aviso: {fileID: 1688694050624696494}
   lineaTexto:
-  - 'Vendedor: Hola, mucho gusto, me dijeron queras muy bueno con las Sumas, necesito
-    de tu ayuda, podrias ayudarme?'
-  - 'Heroe: claro que lo soy, dejame ayudarte.'
-  - 'Vendedor: Veamos si eres tan bueno como dices.'
-  - 'Vendedor: Veamos si eres tan bueno como dices.'
-  - 'Vendedor: Veamos si eres tan bueno como dices.'
-  - 'Vendedor: Veamos si eres tan bueno como dicesss.'
+  - "Lionel: Hola, mucho gusto... Cuentan por ah\xED que sos bueno con las matem\xE1ticas.
+    \xBFTe importa resolver unos desaf\xEDos?"
+  - "Tom\xE1s: Claro que lo soy... Veamos qu\xE9 tenes para mi."
+  - 'Lionel: Veamos si sos tan bueno como decis.'
+  - "Lionel: Esto todav\xEDa no termin\xF3, Tom\xE1s."
+  - "Lionel: Todav\xEDa tengo desaf\xEDos para vos."
+  - "Lionel: \xA1En algo ten\xE9s que errarle!"
+  - "Lionel: \xA1Muchas Gracias por ayudarme!"
   panelDialogo: {fileID: 6324976912783438936}
   textoDialogo: {fileID: 4121131618413828838}
   panelPreguntas: {fileID: 5450967701170648488}
@@ -213,12 +215,13 @@ MonoBehaviour:
   - {fileID: 1663424156057181559}
   textoPregunta: {fileID: 3524594000040868602}
   preguntas:
-  - pregunta: "mi puerco acaba de tener 4 crias\xBFcuantos puercos tengo ahora?"
+  - pregunta: "Mi chanchito acaba de tener 4 crias... \xBFMe decis cu\xE1ntos chanchos
+      tengo en total?"
     respuestas:
     - 4
     - 5
     respuestaCorrecta: 1
-  - pregunta: "tengo 5 manzanas y me regalaron 6\xBFcuantas tengo ahora?"
+  - pregunta: "Aqu\xED tengo 5 manzanas y me acaban de regalar 6. \xBFEl total es...?"
     respuestas:
     - 11
     - 15
@@ -375,7 +378,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7666015113446643245
 Transform:
   m_ObjectHideFlags: 0
@@ -386,7 +389,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.008414745, y: 0.8199302, z: 0}
-  m_LocalScale: {x: -0.4, y: 0.4, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4841976028894696430}
@@ -434,13 +437,13 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: -2366593085506404056, guid: 0c2dc16392d11674e91a77c1d717441c, type: 3}
+  m_SortingOrder: 1
+  m_Sprite: {fileID: -4633433242664049481, guid: b405841f57624c14ea7b62e65df937fb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.25, y: 1.4}
+  m_Size: {x: 0.4, y: 0.4}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -513,7 +516,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7fc501b14b119e142bad9d9a26b51d9e, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -538,8 +541,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 60
-  m_fontSizeBase: 60
+  m_fontSize: 70
+  m_fontSizeBase: 70
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -579,7 +582,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &2291797488055284145
@@ -610,7 +613,7 @@ RectTransform:
   m_GameObject: {fileID: 2291797488055284145}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.4999999, y: 1.2, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5766833555194489794}
@@ -770,7 +773,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 1
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7fc501b14b119e142bad9d9a26b51d9e, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -836,7 +839,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &5308570076302033399
@@ -959,7 +962,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6267913301656994083
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1003,7 +1006,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.78039217}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1079,7 +1082,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.90588236}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1163,7 +1166,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 4
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7fc501b14b119e142bad9d9a26b51d9e, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -1229,7 +1232,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &8844427289873166395
@@ -1260,7 +1263,7 @@ RectTransform:
   m_GameObject: {fileID: 8844427289873166395}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.4999999, y: 1.2, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8097429148013583122}

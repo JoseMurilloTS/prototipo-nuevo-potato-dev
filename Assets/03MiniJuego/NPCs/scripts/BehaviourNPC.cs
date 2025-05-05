@@ -2,12 +2,14 @@ using UnityEngine;
 using System.Collections;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class BehaviourNPC : MonoBehaviour
 {
     private bool isPlayer;
     private bool didDialogueStart;
     private int indexLine;
-
+    private int puntosRespuestaCorrecta = 100;
+    [SerializeField] private GameObject npcSiguiente;
     [SerializeField]private GameObject aviso;
     [SerializeField, TextArea(6, 4)] private string[] lineaTexto;
     [SerializeField] private GameObject panelDialogo;
@@ -18,6 +20,7 @@ public class BehaviourNPC : MonoBehaviour
     [SerializeField] private Button[] botonesRespuestas; // Asigna 2 botones en el Inspector
     [SerializeField] private TMP_Text textoPregunta;
     private int preguntaActual = 0;
+    private bool yaPregunto=false;  //sirve para que cuando el jugador ya termino la cinematica ya no entre a las preguntas 
 
     // Preguntas y respuestas
     [System.Serializable]
@@ -52,6 +55,7 @@ public class BehaviourNPC : MonoBehaviour
             if (!didDialogueStart)
             {
                 EmpezarDialogo();
+                preguntaActual = 0;
             }
             else if (textoDialogo.text == lineaTexto[indexLine])
             {
@@ -78,7 +82,9 @@ public class BehaviourNPC : MonoBehaviour
         didDialogueStart = true;
         panelDialogo.SetActive(true);
         aviso.SetActive(false);
-        indexLine = 0;
+        // Si ya preguntó, empezar directamente en la última línea
+        indexLine = yaPregunto ? lineaTexto.Length - 1 : 0; //estoy usando el operador ternario para hacerlo de forma mas compacta a los condicionales
+                                                            // son similares equivalentes al iff y al else;
         StartCoroutine(MostrarLineas());
     }
     private IEnumerator MostrarLineas()
@@ -93,16 +99,39 @@ public class BehaviourNPC : MonoBehaviour
 
     private void SiguienteLinea()
     {
-        indexLine++;
-        if(indexLine< lineaTexto.Length)
+        if (yaPregunto && didDialogueStart)
         {
-            StartCoroutine(MostrarLineas());
+            // Mostrar directamente la última línea
+            indexLine = lineaTexto.Length - 1; // indice del último elemento del aaray
+            textoDialogo.text = lineaTexto[indexLine];
+
+            didDialogueStart = false;
+            panelDialogo.SetActive(false);
+            aviso.SetActive(true);
+            return;
         }
         else
         {
-            didDialogueStart=false;
-            panelDialogo.SetActive(false);
-            aviso.SetActive(true);
+            indexLine++;
+            if (indexLine < lineaTexto.Length-1)
+            {
+                StartCoroutine(MostrarLineas());
+            }
+            else
+            {
+                didDialogueStart = false;
+                panelDialogo.SetActive(false);
+                aviso.SetActive(true);
+                yaPregunto = true;
+                if (npcSiguiente != null)
+                {
+                    npcSiguiente.SetActive(true);
+                }
+                else
+                {
+                    SceneManager.LoadScene("GameOver");
+                }
+            }
         }
     }
 
@@ -136,15 +165,15 @@ public class BehaviourNPC : MonoBehaviour
             botonPresionado.image.color = Color.red;
 
             // Desactivar solo este botón
-            // botonPresionado.interactable = false;
-
+            //botonPresionado.interactable = false;
+            PlayerScore.Instance.perderVida();
             // No incrementar preguntaActual, para permitir reintentos
             return; //Salir sin avanzar.
         }
         else
         {
             Debug.Log("Respuesta correcta!");
-
+            PlayerScore.Instance.GanarPuntos(puntosRespuestaCorrecta);
             // Restaurar colores de todos los botonespor si alguno estaba rojo
             foreach (var boton in botonesRespuestas)
             {
@@ -163,14 +192,20 @@ public class BehaviourNPC : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        isPlayer = true;
-        aviso.SetActive(true);
-        Debug.Log("ya estoy");
+        if (collision.CompareTag("Player"))
+        {
+            isPlayer = true;
+            aviso.SetActive(true);
+            Debug.Log("ya estoy");
+        }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
-        isPlayer = false;
-        Debug.Log("me fui");
-        aviso.SetActive(false);
+        if (collision.CompareTag("Player"))
+        {
+            isPlayer = false;
+            Debug.Log("me fui");
+            aviso.SetActive(false);
+        }
     }
 }
